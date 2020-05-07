@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
     	setInterval(() => {
         	if (count < numbers) {
             	count++
+            	
             	let li = document.createElement('li')
+            	if (count % 2 != 0) {
+            		li.style.color = 'pink'
+            	}
             	li.innerText = count
             	list.appendChild(li)
             	document.body.appendChild(list)

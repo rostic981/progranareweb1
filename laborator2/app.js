@@ -4,5 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     newDiv.id = 'text'
     newDiv.innerText = 'START'
     document.body.appendChild(newDiv)
+     setTimeout(() => {
+     	document.body.style.backgroundColor = 'green'
+    }, 3000);
    
 });

@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
      setTimeout(() => {
      	document.body.style.backgroundColor = 'green'
     }, 1000);
-   
 
      setTimeout(() => {
      	 let list = document.createElement('ol')
+     	 list.id = 'list'
    		 const numbers = 15
     	let count = 0
     	setInterval(() => {
@@ -27,5 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         	}
     	}, 1000)
     }, 3000);
+
+     setTimeout(() => {
+     	document.getElementById('list').remove()
+    	document.getElementById('text').innerText = "END"
+    }, 20000);
 
 });
